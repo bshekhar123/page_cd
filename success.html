@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="congrats-message">
+        <h1>Congratulations!</h1>
+    </br>
+        <p>Your form has been successfully submitted.</p>
+    </div>
+    <script>
+        // Redirect to the home page after 1.5 seconds
+        setTimeout(function(){
+            window.location.href = 'index.html';
+        }, 1500);
+    </script>
+</body>
+<style>
+    /* Success Page Styles */
+.congrats-message {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightcoral;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.congrats-message h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.congrats-message p {
+    font-size: 24px;
+}
+
+</style>
+</html>

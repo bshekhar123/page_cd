@@ -1,0 +1,535 @@
+ body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply the background image to the entire body */
+body {
+    background-image: url('images/med.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.907);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar.full-black {
+    background-color: black;
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: lightcoral;
+    margin-left: 20px;
+}
+
+
+.logo-subtext {
+    font-size: 19px;
+    display: block;
+    text-align: center;
+    color: lightcoral;
+}
+
+/* Menu icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nav-item {
+    color: rgb(255, 255, 255);
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: lightcoral;
+}
+
+.nav-item:not(.active):hover {
+    color: lightcoral;
+}
+
+
+ /* Menu Icon (Hidden on Desktop) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+/* Mobile Menu styles */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-item {
+    display: block;
+    padding: 15px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-nav-item:hover {
+    color: lightcoral;
+}
+
+
+
+/* Header styles */
+.header {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.682);
+}
+
+.header-content {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 88px;
+    margin: 0;
+}
+
+.header .quote {
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+/* Button styles */
+.registration-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    font-weight: bold;
+}
+
+.registration-button:hover {
+    background-color: lightcoral;
+    color: darkred;
+    border: 2px solid darkred;
+}
+
+/* Main section styles */
+.main {
+    background-image: url('images/m.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Registration Form Styles */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-heading {
+    color: darkred;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.para{
+    text-align: center;
+
+}
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input {
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+form select, form button {
+    width: calc(100% - 22px);
+}
+
+form button {
+    width: 100px; 
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none; 
+}
+
+form button:hover {
+    background-color: white;
+    color: darkred;
+    border: 2px solid darkred; 
+}
+
+
+ .about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+}
+
+/* About Us section styles */
+.about-content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: black;
+}
+
+.about-us h1 {
+    font-size: 120px;
+    margin: 20px 0 0 0;
+    color: lightcoral;
+}
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.doctor-pic {
+    margin-top: 20px;
+}
+
+.doctor-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+html {
+    scroll-behavior: smooth;  
+}
+
+
+
+
+
+
+
+
+
+
+.universities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+}
+
+.universities h1 {
+    font-size: 48px;
+    color: lightcoral;
+    margin-bottom: 30px;
+    margin-top: 0px; 
+}
+
+/* Country list styles */
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.country {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid lightcoral;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.country:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.country h2 {
+    font-size: 24px;
+    color: lightcoral;
+    margin-bottom: 15px;
+}
+
+.country ul {
+    list-style-type: none;  
+    padding: 0;
+}
+
+.country li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.country li:hover {
+    color: lightcoral;
+}
+
+.country .more {
+    list-style-type: none;  
+    font-family: 'Cursive', cursive;
+    font-size: 16px;
+    font-weight: 200; 
+}
+
+
+/* Footer styles */
+/* .footer-section {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+ */
+
+
+
+.universities {
+    padding-bottom: 0; 
+}
+
+
+/* Show the mobile menu on small screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+     /* Menu icon on the right */
+     .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+       .navbar {
+        padding: 10px 20px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .logo {
+        font-size: 30px;
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+    
+    /* Mobile menu adjustments */
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 60px;  
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-nav-item {
+        display: block;
+        padding: 15px 0;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .mobile-nav-item:hover {
+        color: lightcoral;
+    }
+     /* Adjust the header content for mobile */
+     .header h1 {
+        font-size: 40px;
+    }
+
+    .header .quote {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .header-logo {
+        max-width: 150px;
+    }
+}
+/* Responsive design for mobile view */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 100vh;
+        padding-top: 10px; 
+    }
+
+    .header-content {
+        padding: 20px;
+    }
+
+    .header-logo {
+        max-width: 150px;  
+        margin-bottom: 15px;
+    }
+
+    .header h1 {
+        font-size: 40px;  
+    }
+
+    .header .quote {
+        font-size: 18px;  
+        margin-top: 5px;
+    }
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-us h1 {
+        font-size: 48px; 
+    }
+
+    .about-content {
+        padding: 10px;
+    }
+
+    .about-content h1 {
+        font-size: 48px;
+    }
+
+    .doctor-pic {
+        margin: 20px auto; 
+    }
+
+    .doctor-image {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;  
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        margin-top: 20px; 
+    }
+}

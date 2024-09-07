@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MBBS Gurukul</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">MBBS</span><br>
+            <span class="logo-subtext">GURUKUL</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home" class="nav-item">Home</a></li>
+            <li><a href="about.html" class="nav-item active">About Us</a></li>
+            <li><a href="universities.html" class="nav-item">Universities</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="about-us">
+            <div class="about-content">
+                <h1>About</h1>
+                <h1>Us...</h1>
+                <p>At MBBS Gurukul, we are dedicated to guiding students on their journey to becoming medical professionals. Our goal is to simplify the process of pursuing an MBBS degree abroad by providing comprehensive information and personalized support. We offer detailed insights into top universities, including admission requirements, tuition fees, and living costs, helping students make informed decisions.</br>
+                                      Our expert team provides tailored counseling, assisting with everything from university selection to visa applications and pre-departure preparations. We understand that every student’s path is unique, so we offer personalized advice to match individual needs and aspirations. Our commitment extends beyond just providing information; we actively support our students through every stage of their journey, ensuring they are well-prepared to adapt to a new academic environment.
+                </br>
+                    Additionally, we provide valuable resources and tips on navigating life as an international student, including cultural adaptation and managing academic demands. Our dedication to excellence is reflected in the success stories of our students who have achieved their dreams of studying MBBS at prestigious institutions around the world. At MBBS Gurukul, we are more than just advisors; we are partners in your journey to becoming a successful medical professional.</p>
+            </div>
+            <div class="doctor-pic">
+                <img src="images/njj.png" alt="Doctor" class="doctor-image">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MBBS Gurukul. All rights reserved.</p>
+    </footer>
+</body>
+
+<style>
+    /* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgb(0, 0, 0); /* Slightly transparent black */
+    color: white;
+    display: flex;
+    justify-content: center; /* Centering the nav-links */
+    align-items: center;
+    padding: 20px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.full-black {
+    background-color: black; /* Changes to full black when scrolled */
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    color: lightcoral;
+    left: 20px; /* Keeps the logo on the left side */
+}
+
+.logo-subtext {
+    font-size: 19px;
+    display: block;
+    text-align: center;
+    color: lightcoral;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    color: rgb(255, 255, 255);
+    margin: 0 20px; /* Adjusts spacing between items */
+    font-size: 18px; /* Increased font size */
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: lightcoral;
+    text-decoration: none; /* No underline on hover */
+}
+
+.nav-item:not(.active):hover {
+    color: lightcoral;
+}
+
+/* About Us section */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h1 {
+    font-size: 120px;
+    margin: 0;
+    color: lightcoral;
+}
+
+.about-content h1:nth-of-type(2) {
+    margin-top: -10px; /* Adjust spacing between "About" and "Us" */
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.doctor-pic {
+    max-width: 50%;
+}
+
+.doctor-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer styles */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+</style>
+</html>
